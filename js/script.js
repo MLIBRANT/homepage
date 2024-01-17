@@ -1,3 +1,9 @@
+const welcome = () => {
+    console.log ("Cześć");
+}
+
+welcome ();
+
 let button = document.querySelector(".button");
 let body = document.querySelector(".body");
 let themeName = document.querySelector(".themeName");
