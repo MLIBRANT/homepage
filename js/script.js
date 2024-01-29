@@ -1,23 +1,21 @@
 {
     const welcome = () => {
-        console.log ("Cześć");
+        console.log("Cześć");
     }
-    
+
     const onChangeBackgroundClick = () => {
         const body = document.querySelector(".body");
         const themeName = document.querySelector(".themeName");
-       
-        body.classList.toggle("dark");
-        themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";    
-    };
 
+        body.classList.toggle("dark");
+        themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";
+    };
     const init = () => {
-        const changeBackgrounButton = document.querySelector(".themeName");
+        const changeBackgrounButton = document.querySelector(".button");
         changeBackgrounButton.addEventListener("click", onChangeBackgroundClick);
 
-    welcome ();   
-    
-};
+        welcome();
+    };
 
-init();
+    init();
 }
